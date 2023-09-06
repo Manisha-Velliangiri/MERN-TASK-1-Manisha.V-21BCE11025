@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <style>
+    
+
+    table{
+      padding:20px;
+        border-collapse:collapse;
+        border:2px solid black;
+        text-align:center;   
+    }
+    #genderSpan{
+        colspan="2";
+    }
+    #addSpan{
+        colspan="4";
+    }
+    div{
+      position:absolute;
+      top:50%;
+      left:10%;
+      transform:translate(-50%,-50%);
+      margin-left:150px;
+    }
+    button{
+       margin-left:140px;
+       margin-top:20px;
+    }
+    
+    
+    </style>
+    <body>
+    <div>
+      
+    
+    <table border="1">
+        <form method="GET">
+        <tr>
+            <td>First Name</td>
+            <td>
+            <input size=50 type="text" name="firstName" value="">
+           </td>
+        </tr>
+        <tr>
+           <td> Last Name</td>
+           <td>
+             <input size=50 type="text" name="lastName" value="">
+           </td>
+        </tr>
+        <tr>
+           <td> Email</td>
+           <td>
+             <input size=50 type="email" name="lastName" value="">
+           </td>
+        </tr>
+        <tr>
+           <td> Password</td>
+           <td>
+             <input size=50 type="password" name="lastName" value="">
+           </td>
+        </tr>
+        <tr>
+           <td> Re-enter Password</td>
+           <td>
+             <input size=50 type="password" name="lastName" value="">
+           </td>
+        </tr>
+        <tr>
+           <td id="genderSpan" > Gender </td>
+           <td>
+             <input type="radio" name="Gender" value="male">
+             <label for="male">Male</label><br>
+             <input type="radio" name="Gender" value="female">
+             <label for="female">Female</label><br>
+           </td>
+        </tr>
+        <tr>
+           <td> Age</td>
+           <td>
+             <input size=50 type="number"  value="">
+           </td>
+        </tr>
+        <tr>
+           <td> Phone Number</td>
+           <td>
+             <input size=50 type="number"  value="">
+           </td>
+        </tr>
+        <tr>
+           <td id="addSpan"> Address</td>
+           <td>
+             <textarea rows="5" cols="47"></textarea>
+           </td>
+        </tr>
+         <tr>
+           <td>State</td>
+           <td>
+             <input size=50 type="text"  value="">
+           </td>
+        </tr>
+         <tr>
+           <td> Country</td>
+           <td>
+             <select>
+             <option value="">Choose your country</option>
+                <option value="India">India</option>
+                 <option value="Pakistan">Pakistan</option>
+                  <option value="Nepal">Nepal</option>
+                   <option value="Sri Lanka">Sri Lanka</option>
+             </select>
+           </td>
+        </tr>
+        <tr>
+           <td  > Languages known </td>
+           <td>
+             <input type="checkbox" name="eng" value="English">
+             <label for="eng">English</label>
+             <input type="checkbox" name="tam" value="Tamil">
+             <label for="tam">Tamil</label>
+             <input type="checkbox" name="kan" value="Kannada">
+             <label for="kan">Kannada</label>
+             <input type="checkbox" name="hin" value="Hindi">
+             <label for="hin">Hindi</label><br>
+           </td>
+        </tr>
+        <tr >
+          <td colspan="3"><input type="checkbox" name="i declare" value="">
+         <label for="i declare">Hereby I declare all the given details are true</label>
+         </td>
+        </tr>
+        <tr >
+          <td colspan="3">Log in to <a href="https://ethnus.com/">Ethnus</a>Website</td>
+        </tr>
+        
+        
+        
+           
+           
+        </form>
+    </table>
+      <button type="submit">Register</button>
+     </div>
+    </body>
+</html>
